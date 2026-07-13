@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | IN-CURSO</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#af8862;
+}
+
+/* MENU */
+
+header{
+
+background:#000;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+
+}
+
+header h1{
+
+font-size:30px;
+
+}
+
+header a{
+
+color:white;
+text-decoration:none;
+background:#632d18;
+padding:10px 18px;
+border-radius:8px;
+
+}
+
+header a:hover{
+
+background:#8a4322;
+
+}
+
+/* BIENVENIDA */
+
+.bienvenida{
+
+text-align:center;
+padding:40px;
+
+}
+
+.bienvenida h2{
+
+font-size:40px;
+color:#4b2a12;
+
+}
+
+.bienvenida p{
+
+margin-top:15px;
+font-size:20px;
+
+}
+
+/* TARJETAS */
+
+.contenedor{
+
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+padding:40px;
+
+}
+
+.card{
+
+width:260px;
+background:white;
+border-radius:15px;
+padding:30px;
+text-align:center;
+box-shadow:0 0 15px rgba(0,0,0,.2);
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+color:#4b2a12;
+
+}
+
+.card p{
+
+margin-bottom:20px;
+
+}
+
+.card a{
+
+display:inline-block;
+text-decoration:none;
+background:#004b5e;
+color:white;
+padding:10px 20px;
+border-radius:8px;
+
+}
+
+.card a:hover{
+
+background:#006b80;
+
+}
+
+/* FOOTER */
+
+footer{
+
+margin-top:30px;
+background:black;
+color:white;
+text-align:center;
+padding:20px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🎓 IN-CURSO</h1>
+
+<a href="index.html">
+Cerrar sesión
+</a>
+
+</header>
+
+<section class="bienvenida">
+
+<h2>
+
+¡Bienvenido!
+
+</h2>
+
+<p>
+
+Selecciona una opción para comenzar.
+
+</p>
+
+</section>
+
+<section class="contenedor">
+
+<div class="card">
+
+<h3>📚 Mis Cursos</h3>
+
+<p>
+
+Consulta todos los cursos en los que estás inscrito.
+
+</p>
+
+<a href="cursos.html">
+
+Entrar
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>📈 Mi Progreso</h3>
+
+<p>
+
+Observa tu avance y porcentaje completado.
+
+</p>
+
+<a href="#">
+
+Ver progreso
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🏆 Certificados</h3>
+
+<p>
+
+Descarga tus certificados cuando completes un curso.
+
+</p>
+
+<a href="#">
+
+Ver certificados
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>👤 Perfil</h3>
+
+<p>
+
+Modifica tu información personal.
+
+</p>
+
+<a href="perfil.html">
+
+Abrir perfil
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+IN-CURSO © 2026
+
+</footer>
+
+</body>
+
+</html>
