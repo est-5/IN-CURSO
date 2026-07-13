@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IN-CURSO</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#af8862;
+        }
+
+        /*=========================
+        NAVBAR
+        =========================*/
+
+        .navbar{
+            background:#000;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px 40px;
+        }
+
+        .logo{
+            color:white;
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        .menu{
+            display:flex;
+            gap:15px;
+        }
+
+        .menu a{
+            color:white;
+            text-decoration:none;
+            padding:10px 15px;
+            border-radius:8px;
+            transition:.3s;
+        }
+
+        .menu a:hover{
+            background:#632d18;
+        }
+
+        .search{
+            display:flex;
+        }
+
+        .search input{
+            padding:10px;
+            border:none;
+            border-radius:8px 0 0 8px;
+            outline:none;
+        }
+
+        .search button{
+            border:none;
+            padding:10px 15px;
+            cursor:pointer;
+            background:#6b5e26;
+            color:white;
+            border-radius:0 8px 8px 0;
+        }
+
+        /*=========================
+        PRESENTACIÓN
+        =========================*/
+
+        .hero{
+            text-align:center;
+            padding:60px 20px;
+        }
+
+        .hero h1{
+            font-size:50px;
+            background:#4b2a12;
+            color:white;
+            display:inline-block;
+            padding:15px 30px;
+            border-radius:12px;
+        }
+
+        .hero h2{
+            margin-top:25px;
+            color:#222;
+        }
+
+        .hero p{
+            max-width:900px;
+            margin:25px auto;
+            line-height:1.8;
+            font-size:20px;
+        }
+
+        /*=========================
+        CURSOS
+        =========================*/
+
+        .titulo{
+            text-align:center;
+            margin-top:40px;
+            color:white;
+            font-size:35px;
+        }
+
+        .cursos{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:30px;
+            margin:50px;
+        }
+
+        .card{
+            width:250px;
+            background:#4b2a12;
+            border-radius:20px;
+            overflow:hidden;
+            color:white;
+            transition:.3s;
+            cursor:pointer;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card img{
+            width:100%;
+            height:180px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            padding:20px;
+        }
+
+        /*=========================
+        BOTÓN
+        =========================*/
+
+        .boton{
+            display:inline-block;
+            margin-top:40px;
+            background:#004b5e;
+            color:white;
+            text-decoration:none;
+            padding:15px 30px;
+            border-radius:10px;
+            font-size:18px;
+            transition:.3s;
+        }
+
+        .boton:hover{
+            background:#006b80;
+        }
+
+        footer{
+            margin-top:70px;
+            background:black;
+            color:white;
+            padding:20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        IN-CURSO
+    </div>
+
+    <div class="menu">
+
+        <a href="index.html">Inicio</a>
+
+        <a href="encuesta.html">Encuesta</a>
+
+        <a href="#">Cursos</a>
+
+        <a href="#">Help</a>
+
+        <a href="#">Nosotros</a>
+
+    </div>
+
+    <div class="search">
+
+        <input type="text" placeholder="Buscar curso...">
+
+        <button>🔍</button>
+
+    </div>
+
+</nav>
+
+
+<section class="hero">
+
+<h1>Bienvenido a IN-CURSO</h1>
+
+<h2>Mejorando el aprendizaje en nuestro país</h2>
+
+<p>
+
+Somos una plataforma educativa dedicada a ofrecer cursos de calidad para estudiantes de todas las edades.
+Nuestro objetivo es hacer que aprender sea sencillo, divertido y accesible mediante contenido interactivo en distintas áreas del conocimiento.
+
+</p>
+
+<a class="boton" href="encuesta.html">
+Comenzar ahora
+</a>
+
+</section>
+
+
+<h2 class="titulo">
+Nuestros cursos
+</h2>
+
+<section class="cursos">
+
+<div class="card">
+
+<img src="img/arte.jpg" alt="Arte">
+
+<h3>🎨 Arte</h3>
+
+</div>
+
+<div class="card">
+
+<img src="img/finanzas.jpg" alt="Finanzas">
+
+<h3>💰 Finanzas</h3>
+
+</div>
+
+<div class="card">
+
+<img src="img/ingles.jpg" alt="Inglés">
+
+<h3>🇬🇧 Inglés</h3>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<h3>IN-CURSO © 2026</h3>
+
+<p>
+Plataforma educativa para mejorar el aprendizaje.
+</p>
+
+</footer>
+
+</body>
+</html>
