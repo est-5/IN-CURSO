@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Iniciar Sesión | IN-CURSO</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#af8862;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.login-box{
+
+    width:380px;
+    background:white;
+    border-radius:15px;
+    padding:35px;
+    box-shadow:0 0 20px rgba(0,0,0,.25);
+
+}
+
+h1{
+
+    text-align:center;
+    color:#4b2a12;
+    margin-bottom:10px;
+
+}
+
+p{
+
+    text-align:center;
+    color:#555;
+    margin-bottom:30px;
+
+}
+
+label{
+
+    display:block;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-weight:bold;
+
+}
+
+input{
+
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:15px;
+
+}
+
+button{
+
+    width:100%;
+    margin-top:25px;
+    padding:13px;
+    border:none;
+    border-radius:8px;
+    background:#004b5e;
+    color:white;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#006b80;
+
+}
+
+.links{
+
+    margin-top:20px;
+    text-align:center;
+
+}
+
+.links a{
+
+    color:#004b5e;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+.links a:hover{
+
+    text-decoration:underline;
+
+}
+
+.logo{
+
+    text-align:center;
+    font-size:28px;
+    margin-bottom:15px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<div class="logo">
+🎓
+</div>
+
+<h1>IN-CURSO</h1>
+
+<p>Inicia sesión para continuar</p>
+
+<form id="loginForm">
+
+<label>Correo electrónico</label>
+
+<input
+type="email"
+placeholder="correo@ejemplo.com"
+required>
+
+<label>Contraseña</label>
+
+<input
+type="password"
+placeholder="********"
+required>
+
+<button type="submit">
+
+Entrar
+
+</button>
+
+</form>
+
+<div class="links">
+
+<p>
+
+¿No tienes una cuenta?
+
+</p>
+
+<a href="registro.html">
+
+Crear cuenta
+
+</a>
+
+<br><br>
+
+<a href="index.html">
+
+← Volver al inicio
+
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+document.getElementById("loginForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("¡Bienvenido a IN-CURSO!");
+
+window.location.href="dashboard.html";
+
+});
+
+</script>
+
+</body>
+</html>
